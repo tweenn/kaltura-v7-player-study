@@ -1,0 +1,15 @@
+---
+version: "3.7"
+
+name: github_pages
+services:
+  gateway:
+    image: nginx:stable-alpine
+    environment:
+      - TZ=America/Sao_Paulo
+    ports:
+      - "4466:443"
+    volumes:
+      - ./container/conf:/etc/nginx
+      - ./container/certs:/etc/nginx/certs
+      - ./pages:/usr/share/nginx/html

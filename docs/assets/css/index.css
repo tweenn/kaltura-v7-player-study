@@ -1,0 +1,33 @@
+@import 'https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/themes.css';
+@import 'https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/grid.css';
+@import 'https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/plex.css';
+
+main {
+	min-height: calc(100vh - 3em);
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	padding-bottom: 1em;
+}
+
+h1 {
+	padding-top: 1em;
+}
+
+div ~ h2,
+h2 {
+	padding-top: 0;
+}
+
+.bx--grid {
+	padding-top: 3em;
+}
+
+.pt-2 {
+	padding-top: 2em;
+}

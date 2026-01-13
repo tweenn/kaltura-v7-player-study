@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mediacenter Media Player V7 - Javascript</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="https://www.ibm.com/favicon.ico"></link>
+
+	<!-- KALTURA CODE ----------------------------->
+	<!-- VIDEO PLAYER -->
+	<script src="https://cdnapisec.kaltura.com/p/6010023/embedPlaykitJs/uiconf_id/57375803"></script>
+	<!-- AUDIO -->
+	<script src="https://cdnapisec.kaltura.com/p/6010023/embedPlaykitJs/uiconf_id/57620223"></script>
+
+
+	<!-- PAGE CODE ----------------------------->
+	<link rel="stylesheet" href="../../../assets/css/index.css"></link>
+
+	<script src="../../../assets/js/index.js" type="module"></script>
+
+	<script type="module" src="./index.js" defer></script>
+</head>
+<body>
+	<main>
+		<div class="bx--grid">
+			<div class="bx--row">
+				<div class="bx--col bx--col--auto" id="code-snipet">
+				</div>
+				<div class="bx--col bx--col--auto">
+					<h2>Rendered:</h2>
+
+					<div id="video-target" class="media-player"></div>
+					<div id="audio-target" class="media-player"></div>
+
+					<style>
+						.media-player {
+							aspect-ratio: 16/9;
+							background-color: #dedede;
+
+							& + .media-player {
+								margin-top: 2em;
+							}
+						}
+					</style>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

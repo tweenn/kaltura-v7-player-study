@@ -1,7 +1,7 @@
 import { h, render } from 'https://esm.sh/preact';
 import htm from 'https://esm.sh/htm';
 
-import CodeSnipet from '../../../assets/js/components/code-snipet.js';
+import CodeSnipet from '../../assets/js/components/code-snipet.js';
 
 const codeSnipet = ({
 	targetId,
